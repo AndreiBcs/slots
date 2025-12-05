@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JocDePacanele")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4e465808ff9a6f9f3387d5dcfdc73b54cb84d3c")]
 [assembly: System.Reflection.AssemblyProductAttribute("JocDePacanele")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JocDePacanele")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

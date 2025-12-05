@@ -2,8 +2,47 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="500"
         x:Class="JocDePacanele.MainWindow"
-        Title="JocDePacanele">
-    Welcome to Avalonia!
+        Title="Simple Roulette Game"
+        Background="#F5F5F5">
+    <StackPanel Spacing="20" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20">
+        <TextBlock Text="🎰 Simple Roulette" FontSize="28" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Foreground="#333333"/>
+        
+        <!-- Roulette Display -->
+        <Border BorderBrush="#333333" BorderThickness="3" CornerRadius="10" 
+                Background="White" Padding="20" HorizontalAlignment="Center">
+            <StackPanel Spacing="10" HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal" Spacing="15" HorizontalAlignment="Center">
+                    <Border BorderBrush="#999999" BorderThickness="2" CornerRadius="8" 
+                            Width="100" Height="100" Background="#FFE5E5">
+                        <TextBlock Name="Slot1" Text="🍎" FontSize="48" 
+                                   VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                    <Border BorderBrush="#999999" BorderThickness="2" CornerRadius="8" 
+                            Width="100" Height="100" Background="#E5F5FF">
+                        <TextBlock Name="Slot2" Text="🍊" FontSize="48" 
+                                   VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                    <Border BorderBrush="#999999" BorderThickness="2" CornerRadius="8" 
+                            Width="100" Height="100" Background="#E5FFE5">
+                        <TextBlock Name="Slot3" Text="🍋" FontSize="48" 
+                                   VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                </StackPanel>
+                
+                <TextBlock Name="ResultText" Text="" FontSize="16" 
+                           HorizontalAlignment="Center" Foreground="#333333"/>
+            </StackPanel>
+        </Border>
+        
+        <!-- Controls -->
+        <StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Center">
+            <Button Name="SpinButton" Content="🎯 SPIN" Padding="20,10" FontSize="16" 
+                    Background="#4CAF50" Foreground="White" Click="OnSpinClick"/>
+            <Button Name="ResetButton" Content="🔄 RESET" Padding="20,10" FontSize="16" 
+                    Background="#2196F3" Foreground="White" Click="OnResetClick"/>
+        </StackPanel>
+    </StackPanel>
 </Window>

@@ -71,3 +71,4 @@ c:\Users\User\VSC Proiecte\Pakanele\JocDePacanele\obj\Debug\net9.0\refint\JocDeP
 c:\Users\User\VSC Proiecte\Pakanele\JocDePacanele\obj\Debug\net9.0\JocDePacanele.pdb
 C:\Users\User\VSC Proiecte\Pakanele\JocDePacanele\obj\Debug\net9.0\JocDePacanele.genruntimeconfig.cache
 C:\Users\User\VSC Proiecte\Pakanele\JocDePacanele\obj\Debug\net9.0\ref\JocDePacanele.dll
+c:\Users\User\VSC Proiecte\Pakanele\JocDePacanele\obj\Debug\net9.0\JocDePacanele.sourcelink.json
