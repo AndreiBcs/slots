@@ -11,7 +11,8 @@ public partial class MainWindow : Window
     {
         ("🍎", "Apple"),
         ("🍊", "Orange"),
-        ("🍋", "Lemon")
+        ("🍋", "Lemon"),
+        ("🍇", "Grape")
     };
 
     public MainWindow()
@@ -25,9 +26,9 @@ public partial class MainWindow : Window
         button.IsEnabled = false;
 
         // Generate random results for each slot
-        int result1 = _random.Next(3);
-        int result2 = _random.Next(3);
-        int result3 = _random.Next(3);
+        int result1 = _random.Next(4);
+        int result2 = _random.Next(4);
+        int result3 = _random.Next(4);
 
         // Update UI
         if (Slot1 is TextBlock slot1) slot1.Text = _slots[result1].emoji;
